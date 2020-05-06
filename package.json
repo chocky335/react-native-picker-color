@@ -1,8 +1,8 @@
 {
-  "name": "react-native-color-wheel",
+  "name": "react-native-picker-color",
   "version": "0.1.7",
   "description": "A react native reusable and color picker wheel",
-  "main": "./ColorWheel.js",
+  "main": "./lib",
   "license": "MIT",
   "repository": {
     "type": "https",
@@ -21,7 +21,9 @@
     "ios"
   ],
   "scripts": {
-    "prepublish": "git push"
+    "prepublish": "git push",
+    "build": "rm -rf ./lib && tsc",
+    "prepare": "yarn build"
   },
   "peerDependencies": {
     "react": ">=16.0.0",
@@ -34,9 +36,10 @@
     "babel-preset-react-native": "^1.9.0",
     "babel-preset-react-native-stage-0": "^1.0.1",
     "eslint": "^3.9.1",
-    "eslint-plugin-react": "^6.6.0"
+    "eslint-plugin-react": "^6.6.0",
+    "typescript": "^3.8.3"
   },
   "dependencies": {
-    "colorsys": "^1.0.17"
+    "colorsys": "^1.0.22"
   }
 }
