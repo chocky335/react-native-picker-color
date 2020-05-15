@@ -1,0 +1,46 @@
+{
+  "name": "react-native-picker-color",
+  "version": "0.1.0",
+  "description": "HSV color picker",
+  "main": "./lib",
+  "license": "MIT",
+  "repository": {
+    "type": "https",
+    "url": "https://github.com/chocky335/react-native-picker-color"
+  },
+  "keywords": [
+    "color picker",
+    "color wheel",
+    "hsv",
+    "rgb",
+    "react",
+    "native",
+    "react-native",
+    "android",
+    "ios",
+    "color",
+    "picker",
+    "wheel",
+    "circle"
+  ],
+  "scripts": {
+    "prepublish": "git push",
+    "build": "rm -rf ./lib && tsc",
+    "prepare": "yarn build",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.6.2",
+    "@react-native-community/eslint-config": "^1.0.0",
+    "@types/react-native": "^0.62.0",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "eslint": "^6.5.1",
+    "prettier": "^2.0.4",
+    "typescript": "^3.8.3"
+  },
+  "resolutions": {
+    "react": ">=16.0.0",
+    "react-native": ">=0.36"
+  }
+}
